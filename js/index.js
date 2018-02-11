@@ -4,6 +4,6 @@ const arduino = new Arduino('/dev/cu.usbmodem1421', 'uno', {
   A0: Commands.INPUT
 });
 
-arduino.on('conected', () => {
+arduino.on('connected', () => {
   arduino.DigitalWrite('D9', Commands.FALSE);
 });

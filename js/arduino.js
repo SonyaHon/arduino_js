@@ -48,7 +48,7 @@ class Arduino extends EventsEmitter {
               msg.push(config[key]);
             });
             this.__SendMessage(msg);
-            this.emit('conected');
+            this.emit('connected');
           }
           this.message = [];
         }
@@ -121,7 +121,7 @@ class Arduino extends EventsEmitter {
 
   DigitalWrite(pin, value) {
     let val;
-    if (value == true || value == 1 || value === Commands.TRUE) val = Commands.TRUE;
+    if (value == true || value == 1 || value === Commands.HIGH) val = Commands.TRUE;
     else val = Commands.FALSE;
     this.__SendMessage([0x01, this.__PinNameToPinNum(pin), val]);
   }
