@@ -1,0 +1,12 @@
+module.exports = {
+  MSG_BEGIN: 0x62,
+  MSG_END: 0x65,
+  MODEL_UNO: 0x01,
+  MODEL_NANO: 0x02,
+  TRUE: 0x74,
+  FALSE: 0x66,
+  UNDEFINED: 0x75,
+  OUTPUT: 0,
+  INPUT: 1,
+  INPUT_PULLUP: 1
+};
